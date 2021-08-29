@@ -4,10 +4,10 @@ def parse_args():
     parser = argparse.ArgumentParser()
 
     # in/out
-    parser.add_argument('--outf', default='/content/drive/MyDrive/Retinal_Vessel_Segmentation/Experiments',
-                        help='trained model will be saved at here') #Not use
-    parser.add_argument('--save', default='UNet_vessel_seg',
-                        help='save name of experiment in args.outf directory') #Not use
+    # parser.add_argument('--outf', default='/content/drive/MyDrive/Retinal_Vessel_Segmentation/Experiments',
+    #                     help='trained model will be saved at here') #Not use
+    # parser.add_argument('--save', default='UNet_vessel_seg',
+    #                     help='save name of experiment in args.outf directory') #Not use
     # Retinal Vessel Segmentation
     parser.add_argument('--Vessel_best_model_path', default='G:/IIT_MADRAS_DD/Semesters/10th_sem/DDP_new_topic/My work/GUI/Network_Weights/Retinal_Vessel_Segmentation/best_model.pth',
                         help='directory of best model path for Retinal Vessel Segmentation')
@@ -22,9 +22,9 @@ def parse_args():
                         help='output channels of model')
 
     parser.add_argument('--batch_size_VS', default=64,
-                       type=int, help='batch size')
+                       type=int, help='batch size for Vessel Segmentation')
     parser.add_argument('--batch_size_OD', default=32,
-                       type=int, help='batch size')
+                       type=int, help='batch size for Optic Disc Segmentation')
 
     # inference
     parser.add_argument('--test_patch_height_VS', default=64)

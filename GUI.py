@@ -257,7 +257,6 @@ def calculate_f_d(pred_img_mask):
 	return f_d
 
 def show_f_d():
-	# l_3.configure(text="Fractal Dimension is: "+str(f_d), font=buttonFont)
 	l_3.configure(text="Fractal Dimension is: " + "{:.4f}".format(f_d), font=buttonFont)
 
 def Show_Vessel_Segmentation(args):
